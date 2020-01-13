@@ -16,6 +16,22 @@ public class TraverseArrays {
         }
         return array;
     }
+    public static boolean sum28(int[] numbers){
+        int count=0;
+        while (count<=numbers.length){
+            if (numbers[count]==2){
+                count++;
+            }
+            else
+                count++;
+        }
+       if (count==4){
+           return true;
+       }
+       else{
+           return false;
+       }
+    }
     public static void main (String[]args){
     }
 }
