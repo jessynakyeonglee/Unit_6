@@ -10,12 +10,12 @@ public class TraverseArrays {
         return evens;
     }
     public static int[] buildArray(int desiredLength){
-        int []array={};
+        int []array=new int[desiredLength];
         for (int count=0;count<desiredLength;count++){
-            array+=count;
+           array[count]=count;
         }
+        return array;
     }
     public static void main (String[]args){
-        System.out.print(countEven(new int[] {2,1,2,3,4}));
     }
 }
