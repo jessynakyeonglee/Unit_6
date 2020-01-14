@@ -32,6 +32,21 @@ public class TraverseArrays {
            return false;
        }
     }
+    public static int[] zeroMax(int[] original){
+      int []output = new int[original.length];
+        for (int count=0;count<original.length;count++){
+            if (original[count]==0){
+                for (int count2=count;count2<original.length;count2++){
+                    if (original[count2]>original[count])
+                        output[count]=original[count2];
+                }
+            }
+            else
+                output[count]=original[count];
+        }
+        return output;
+    }
+
     public static void main (String[]args){
     }
 }
