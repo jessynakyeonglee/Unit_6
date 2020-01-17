@@ -45,6 +45,14 @@ public class ArrayAlgorithms {
         }
         return output;
     }
+    public static String ReverseArray(int [] arr) {
+        for (int count = 0; count < arr.length/2; count++) {
+            int temp=arr[count];
+            arr[count] = arr[arr.length-count-1];
+            arr[arr.length-count-1]=temp;
+        }
+        return printArray(arr);
+    }
     public static void main (String[]args){
         int[] list1 = {-2, -9, -6, -8, -9, -3, -1};
         System.out.println(printArray(list1));
@@ -62,5 +70,7 @@ public class ArrayAlgorithms {
         System.out.println(countEvens(list7));
         int[] list8 = {1, 0, 1, 1, 0, 1, 0, 1};
         System.out.println(printArray(leftShift(list8,6)));
+        int[] list9 = {5,7,4,9,8,1,4,3,0,5,2};
+        System.out.println(ReverseArray(list9));
     }
 }
